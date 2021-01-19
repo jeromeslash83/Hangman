@@ -6,7 +6,6 @@ import hangman_art
 chosen_word = random.choice(hangman_words.word_list)
 
 print(hangman_art.logo)
-print(f'Pssst, the solution is {chosen_word}.')
 
 
 display = []
