@@ -28,10 +28,8 @@ while win == False:
     if not guess in chosen_word:
         lose -= 1
         print("That's not in the word. You lose a life. :( ")
-    if guess in display:
+    elif guess in display:
         print("You've already guessed that letter. Pick another one")
-
-    
 
     print(hangman_art.stages[lose])            
     if lose == 0:
@@ -40,3 +38,5 @@ while win == False:
     print(f'Correct answer:\n{display}\n\n')
 else:
     print('You won!')
+    
+    
